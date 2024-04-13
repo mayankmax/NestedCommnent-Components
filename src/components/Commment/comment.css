@@ -1,0 +1,64 @@
+.comment-container {
+    background-color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.comment-main {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(148, 236, 7, 0.1);
+    border-radius: 8px;
+}
+
+.comment-main p {
+    margin: 0;
+}
+
+.comment-main .reply {
+    cursor: pointer;
+    position: absolute;
+    top: 1;
+    left: 85%;
+    color: red;
+}
+
+.parentreply{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+   height: 40px;
+    width: 50%;
+    min-width: 400px;
+    /* height: 100%; */
+    margin: 10px;
+}
+
+
+
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .comment-main {
+        width: 80%;
+    }
+}
+
+/* Media query for even smaller screens, like mobile phones */
+@media (max-width: 480px) {
+    .comment-main {
+        width: 90%;
+    }
+}
